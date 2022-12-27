@@ -1,18 +1,22 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class LearnCoroutine : MonoBehaviour
+namespace Teddy
 {
-    // Start is called before the first frame update
-    void Start()
+    public class LearnCoroutine : MonoBehaviour
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Start is called before the first frame update
+        void Start()
+        {
+            
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            
+        }
     }
 }
+
