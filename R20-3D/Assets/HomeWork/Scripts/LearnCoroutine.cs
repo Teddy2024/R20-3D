@@ -3,19 +3,22 @@ using UnityEngine;
 
 namespace Teddy
 {
+    ///<summary>
+    ///協同程序Coroutine
+    ///</summary>
     public class LearnCoroutine : MonoBehaviour
     {
+        //條件有四個
+        //using System.Collections
+        //IEnumerator的方法
+        //方法內 yield return(等待)
+        //使用StartCoroutine(啟動)
 
-        // Start is called before the first frame update
-        void Start()
+        private IEnumerator Test()
         {
-            
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-            
+            Debug.Log("First");
+            yield return new WaitForSeconds(2);
+            Debug.Log("Second");
         }
     }
 }
