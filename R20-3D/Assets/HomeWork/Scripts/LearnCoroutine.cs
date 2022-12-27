@@ -18,9 +18,10 @@ namespace Teddy
 
         private void Awake() 
         {
-            StartCoroutine(Test());
-            Debug.Log(testDialogue[0]);
-            StartCoroutine(ShowDialogue());
+            //StartCoroutine(Test());
+            //Debug.Log(testDialogue[0]);
+            //StartCoroutine(ShowDialogue());
+            StartCoroutine(ShowDialogueUseFor());
         }
 
         #region Test
@@ -33,6 +34,8 @@ namespace Teddy
             Debug.Log("Third");
         }    
         #endregion
+
+        #region ShowDialogue
         private IEnumerator ShowDialogue()
         {
             Debug.Log(testDialogue[0]);
@@ -41,6 +44,16 @@ namespace Teddy
             yield return new WaitForSeconds(0.1f);
             Debug.Log(testDialogue[2]);
         }    
+        #endregion
+
+        private IEnumerator ShowDialogueUseFor()
+        {
+           for(int i = 0; i < testDialogue.Length; i++)
+           {
+                Debug.Log(testDialogue[i]);
+                yield return new WaitForSeconds(0.2f);
+           }
+        }       
     }
 }
 
