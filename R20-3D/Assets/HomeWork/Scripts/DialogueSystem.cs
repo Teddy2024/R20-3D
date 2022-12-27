@@ -32,6 +32,7 @@ namespace Teddy
 
             //啟動協程
             StartCoroutine(FadeGroup());
+            StartCoroutine(TyperEffect());
         }    
         #endregion
         
