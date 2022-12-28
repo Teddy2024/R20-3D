@@ -48,8 +48,14 @@ namespace Teddy
         {
             textName.text = dialogueOpening.dialogueName;
             textContent.text = "";
+
             string dialogue = dialogueOpening.dialogueContents[0];
-            yield return dialogueIntervalTime;
+            for(int i = 0; i < dialogue.Length; i++)
+            {
+                textContent.text += dialogue[i];
+                yield return dialogueIntervalTime;
+            }
+            goTriangle.SetActive(true);
         }
     }
 }
