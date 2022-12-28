@@ -42,6 +42,11 @@ namespace Teddy
         }    
         #endregion
 
+        ///<summary>
+        ///開始對話
+        ///</summary>
+        ///<param name = "data">對話資料</param>
+        ///<param name = " _onDialogueFinish">對話結束後事件，可以空值</param>
         public void StartDialogue(DialogueData data, UnityEvent _onDialogueFinish = null)
         {
             playerInput.enabled = false;
