@@ -8,10 +8,16 @@ namespace Teddy
         private DialogueData dataDialogue;
 
         private string nameTarget = "PlayerCapsule";
+        private DialogueSystem dialogueSystem;
+
+        private void Awake() 
+        {
+            dialogueSystem = GameObject.Find("TalkCanvas").GetComponent<DialogueSystem>();
+        }
         
         private void OnTriggerEnter(Collider other) 
         {
-            
+            dialogueSystem.StartDialogue(dataDialogue);
         }
     } 
 }

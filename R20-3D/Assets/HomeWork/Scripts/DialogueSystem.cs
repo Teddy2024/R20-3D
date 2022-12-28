@@ -32,11 +32,15 @@ namespace Teddy
             goTriangle = GameObject.Find("TalkFinishIcon");
             goTriangle.SetActive(false);
 
-            //啟動協程
-            StartCoroutine(FadeGroup());
-            StartCoroutine(TyperEffect());
         }    
         #endregion
+
+        public void StartDialogue(DialogueData data)
+        {
+            //啟動協程
+            StartCoroutine(FadeGroup());
+            StartCoroutine(TyperEffect(data));
+        }
         
         private IEnumerator FadeGroup(bool fadeIn = true)
         {
@@ -51,18 +55,18 @@ namespace Teddy
                 yield return new WaitForSeconds(0.04f);
             }
         }
-        private IEnumerator TyperEffect()
+        private IEnumerator TyperEffect(DialogueData data)
         {
             //取得名子
-            textName.text = dialogueOpening.dialogueName;
+            textName.text = data.dialogueName;
 
             //迴圈對話段
-            for(int j = 0; j < dialogueOpening.dialogueContents.Length; j++)
+            for(int j = 0; j < data.dialogueContents.Length; j++)
             {
                 textContent.text = "";
                 goTriangle.SetActive(false);
                 //此段文字為所取得的對話段
-                string dialogue = dialogueOpening.dialogueContents[j];
+                string dialogue = data.dialogueContents[j];
 
                 //將取得對話段的文字,放入此物件文字內容
                 //將此段文字以協程方式輸出
