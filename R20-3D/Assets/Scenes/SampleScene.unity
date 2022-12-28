@@ -5984,6 +5984,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  propActive: {fileID: 0}
+  dataDialogueActive: {fileID: 0}
 --- !u!4 &1466248342 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
@@ -8148,6 +8150,8 @@ MonoBehaviour:
   onDialogueFinish:
     m_PersistentCalls:
       m_Calls: []
+  propActive: {fileID: 1443686970}
+  dataDialogueActive: {fileID: 11400000, guid: 44432696f9d74554390b0257f3021665, type: 2}
 --- !u!1001 &4454599488493392668
 PrefabInstance:
   m_ObjectHideFlags: 0
