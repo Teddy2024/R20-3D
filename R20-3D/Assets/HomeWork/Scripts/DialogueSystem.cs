@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.InputSystem;
+using UnityEngine.Events;
 
 namespace Teddy
 {
@@ -22,8 +23,9 @@ namespace Teddy
         private TextMeshProUGUI textName;
         private TextMeshProUGUI textContent;
         private GameObject goTriangle;
-        #endregion
         private PlayerInput playerInput;
+        #endregion
+        private UnityEvent onDialogueFinish;
         #region 事件
         private void Awake() 
         {
@@ -39,12 +41,14 @@ namespace Teddy
 
         }    
         #endregion
-        public void StartDialogue(DialogueData data)
+
+        public void StartDialogue(DialogueData data, UnityEvent _onDialogueFinish = null)
         {
             playerInput.enabled = false;
             //啟動協程
             StartCoroutine(FadeGroup());
             StartCoroutine(TyperEffect(data));
+            onDialogueFinish = _onDialogueFinish;
         }
         
         private IEnumerator FadeGroup(bool fadeIn = true)
@@ -60,6 +64,7 @@ namespace Teddy
                 yield return new WaitForSeconds(0.04f);
             }
         }
+
         private IEnumerator TyperEffect(DialogueData data)
         {
             //取得名子
@@ -92,6 +97,7 @@ namespace Teddy
             
             StartCoroutine(FadeGroup(false));
             playerInput.enabled = true;
+            onDialogueFinish.Invoke();
         }
     }
 }
