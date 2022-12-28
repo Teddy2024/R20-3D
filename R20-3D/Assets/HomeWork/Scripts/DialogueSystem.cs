@@ -50,11 +50,13 @@ namespace Teddy
             textContent.text = "";
 
             string dialogue = dialogueOpening.dialogueContents[0];
+            //文字第零段 放入此物件文字內容
             for(int i = 0; i < dialogue.Length; i++)
             {
                 textContent.text += dialogue[i];
                 yield return dialogueIntervalTime;
             }
+            //將此段文字以協程方式輸出
             goTriangle.SetActive(true);
         }
     }

@@ -1815,6 +1815,7 @@ GameObject:
   - component: {fileID: 423784495}
   - component: {fileID: 423784497}
   - component: {fileID: 423784496}
+  - component: {fileID: 423784498}
   m_Layer: 5
   m_Name: TalkFinishIcon
   m_TagString: Untagged
@@ -1880,6 +1881,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423784494}
   m_CullTransparentMesh: 1
+--- !u!95 &423784498
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423784494}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a708f1d93f450e240ae425debba0999a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &430998685
 PrefabInstance:
   m_ObjectHideFlags: 0
