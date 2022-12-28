@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Teddy
 {
@@ -6,6 +7,9 @@ namespace Teddy
     {
         [SerializeField, Header("對話資料")]
         private DialogueData dataDialogue;
+        [SerializeField, Header("對話結束後事件")]
+        private UnityEvent onDialogueFinish;
+
 
         private string nameTarget = "PlayerCapsule";
         private DialogueSystem dialogueSystem;
@@ -18,6 +22,11 @@ namespace Teddy
         private void OnTriggerEnter(Collider other) 
         {
             dialogueSystem.StartDialogue(dataDialogue);
+        }
+
+        public void HiddenObject()
+        {
+            gameObject.SetActive(false);
         }
     } 
 }
