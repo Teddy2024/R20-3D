@@ -38,11 +38,16 @@ namespace Teddy
         }    
         #endregion
         
-        private IEnumerator FadeGroup()
+        private IEnumerator FadeGroup(bool fadeIn = true)
         {
+            //三源運算子 ?;
+            //布林值 ? 1 : 10;
+            //布林值為true,值等於1
+            //布林值為false,值等於10
+            float increase = fadeIn ?  0.1f : -0.1f;
             for(int i = 0; i < 10; i++)
             {
-                groupDialogue.alpha += 0.1f;
+                groupDialogue.alpha += increase;
                 yield return new WaitForSeconds(0.04f);
             }
         }
@@ -76,6 +81,7 @@ namespace Teddy
                 }
             }
             
+            StartCoroutine(FadeGroup(false));
         }
     }
 }
