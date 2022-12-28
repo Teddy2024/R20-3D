@@ -12,6 +12,8 @@ namespace Teddy
         private float dialogueIntervalTime = 0.1f;
         [SerializeField, Header("開頭對話")]
         private DialogueData dialogueOpening;
+        [SerializeField, Header("對話案件")]
+        private KeyCode dialogueKey = KeyCode.Space;
 
         private WaitForSeconds dialogueInterval => new WaitForSeconds(dialogueIntervalTime);
         //prop(屬性欄)看不懂,LAMBDA=>也看不懂
@@ -46,18 +48,34 @@ namespace Teddy
         }
         private IEnumerator TyperEffect()
         {
+            //取得名子
             textName.text = dialogueOpening.dialogueName;
-            textContent.text = "";
 
-            string dialogue = dialogueOpening.dialogueContents[0];
-            //文字第零段 放入此物件文字內容
-            for(int i = 0; i < dialogue.Length; i++)
+            //迴圈對話段
+            for(int j = 0; j < dialogueOpening.dialogueContents.Length; j++)
             {
-                textContent.text += dialogue[i];
-                yield return dialogueIntervalTime;
+                textContent.text = "";
+                goTriangle.SetActive(false);
+                //此段文字為所取得的對話段
+                string dialogue = dialogueOpening.dialogueContents[j];
+
+                //將取得對話段的文字,放入此物件文字內容
+                //將此段文字以協程方式輸出
+                for(int i = 0; i < dialogue.Length; i++)
+                {
+                    textContent.text += dialogue[i];
+                    yield return dialogueIntervalTime;
+                }
+               
+                goTriangle.SetActive(true);
+
+                //還沒按下按鍵就等待
+                while (!Input.GetKeyDown(dialogueKey))
+                {
+                    yield return null;
+                }
             }
-            //將此段文字以協程方式輸出
-            goTriangle.SetActive(true);
+            
         }
     }
 }
