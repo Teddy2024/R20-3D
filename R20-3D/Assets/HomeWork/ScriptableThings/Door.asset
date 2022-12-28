@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85fcff8b9f35d64782f55af936da79a, type: 3}
   m_Name: Door
   m_EditorClassIdentifier: 
-  dialogueName: 
-  dialogueContents: []
+  dialogueName: "\u5011"
+  dialogueContents:
+  - "\u9580\u9580\u9580\u9580\u9580\u9580\u9580\u9580\u9580\u9580\u9580\u9580\u9580\u9580\u9580\u9580\u9580\u9580\u9580\u9580\u9580\u9580\u9580\u9580"

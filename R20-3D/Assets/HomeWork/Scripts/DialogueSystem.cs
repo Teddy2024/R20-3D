@@ -32,6 +32,7 @@ namespace Teddy
             goTriangle = GameObject.Find("TalkFinishIcon");
             goTriangle.SetActive(false);
 
+            StartDialogue(dialogueOpening);
         }    
         #endregion
 
