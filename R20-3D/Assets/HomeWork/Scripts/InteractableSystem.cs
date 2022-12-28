@@ -21,7 +21,10 @@ namespace Teddy
         
         private void OnTriggerEnter(Collider other) 
         {
-            dialogueSystem.StartDialogue(dataDialogue, onDialogueFinish);
+            if(other.name.Contains(nameTarget))
+            {
+                dialogueSystem.StartDialogue(dataDialogue, onDialogueFinish);
+            }
         }
 
         public void HiddenObject()

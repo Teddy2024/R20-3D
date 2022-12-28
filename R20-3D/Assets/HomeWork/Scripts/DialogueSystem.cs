@@ -97,7 +97,7 @@ namespace Teddy
             
             StartCoroutine(FadeGroup(false));
             playerInput.enabled = true;
-            onDialogueFinish.Invoke();
+            onDialogueFinish?.Invoke();
         }
     }
 }
