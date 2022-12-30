@@ -13,6 +13,8 @@ namespace Teddy
         private GameObject propActive;
         [SerializeField, Header("啟動後對話資料")]
         private DialogueData dataDialogueActive;
+        [SerializeField, Header("啟動後對話結束後事件")]
+        private UnityEvent onDialogueFinishAfterActive;
 
 
         private string nameTarget = "PlayerCapsule";
@@ -33,7 +35,7 @@ namespace Teddy
                 }
                 else
                 {
-                    dialogueSystem.StartDialogue(dataDialogueActive);
+                    dialogueSystem.StartDialogue(dataDialogueActive, onDialogueFinishAfterActive);
                 }
             }
         }
