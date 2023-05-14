@@ -17,7 +17,7 @@ namespace Teddy
         [SerializeField, Header("對話案件")]
         private KeyCode dialogueKey = KeyCode.Space;
 
-        private WaitForSeconds dialogueInterval => new WaitForSeconds(dialogueIntervalTime);
+        //private WaitForSeconds dialogueInterval => new WaitForSeconds(dialogueIntervalTime);
         //prop(屬性欄)看不懂,LAMBDA=>也看不懂
         private CanvasGroup groupDialogue;
         private TextMeshProUGUI textName;

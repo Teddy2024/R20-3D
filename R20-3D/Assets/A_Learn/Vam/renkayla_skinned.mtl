@@ -1,0 +1,170 @@
+newmtl Legs-1
+Kd 1 1 1
+Ks 1 0.9294118 0.8901961
+map_Kd Kayla LimbsD
+illum 2
+
+newmtl EyeReflection-1
+Kd 0 0 0
+Tr 1
+d 0
+Ks 0.2431372 0.2431372 0.2431372
+illum 2
+
+newmtl Nostrils-1
+Kd 1 1 1
+Ks 1 0.9294118 0.8901961
+map_Kd Kayla FaceD
+illum 2
+
+newmtl Lacrimals-1
+Kd 1 1 1
+Ks 1 1 1
+map_Kd EyesM
+illum 2
+
+newmtl Pupils-1
+Kd 1 1 1
+Ks 1 1 1
+map_Kd EyesM
+illum 2
+
+newmtl Lips-1
+Kd 1 1 1
+Ks 1 0.9294118 0.8901961
+map_Kd Kayla FaceD
+illum 2
+
+newmtl Tear-1
+Kd 0.8 0.8 0.8
+Tr 1
+d 0
+Ks 1 1 1
+illum 2
+
+newmtl Gums-1
+Kd 0.9 0.9 0.9
+Ks 1 1 1
+map_Kd MouthD
+illum 2
+
+newmtl Irises-1
+Kd 1 1 1
+Ks 1 1 1
+map_Kd EyesM
+illum 2
+
+newmtl Teeth-1
+Kd 0.9 0.9 0.9
+Ks 1 1 1
+map_Kd MouthD
+illum 2
+
+newmtl Cornea-1
+Kd 0.8 0.8 0.8
+Tr 0.534
+d 0.466
+map_Kd S6EyesTr
+illum 2
+
+newmtl Face-1
+Kd 1 1 1
+Ks 1 0.9294118 0.8901961
+map_Kd Kayla FaceD
+illum 2
+
+newmtl Toenails-1
+Kd 1 1 1
+Ks 1 1 1
+map_Kd Kayla LimbsD
+illum 2
+
+newmtl Sclera-1
+Kd 1 1 1
+Ks 0.6980392 0.8941176 1
+map_Kd EyesM
+illum 2
+
+newmtl Fingernails-1
+Kd 1 1 1
+Ks 1 1 1
+map_Kd Kayla LimbsD
+illum 2
+
+newmtl Head-1
+Kd 1 1 1
+Ks 1 0.9294118 0.8901961
+map_Kd Kayla TorsoD
+illum 2
+
+newmtl Hands-1
+Kd 1 1 1
+Ks 1 0.9294118 0.8901961
+map_Kd Kayla LimbsD
+illum 2
+
+newmtl Shoulders-1
+Kd 1 1 1
+Ks 1 0.9294118 0.8901961
+map_Kd Kayla LimbsD
+illum 2
+
+newmtl Neck-1
+Kd 1 1 1
+Ks 1 0.9294118 0.8901961
+map_Kd Kayla TorsoD
+illum 2
+
+newmtl Hips-1
+Kd 1 1 1
+Ks 1 0.9294118 0.8901961
+map_Kd Kayla TorsoD
+illum 2
+
+newmtl Torso-1
+Kd 1 1 1
+Ks 1 0.9294118 0.8901961
+map_Kd Kayla TorsoD
+illum 2
+
+newmtl Nipples-1
+Kd 1 1 1
+Ks 1 0.9294118 0.8901961
+map_Kd Kayla TorsoD
+illum 2
+
+newmtl Forearms-1
+Kd 1 1 1
+Ks 1 0.9294118 0.8901961
+map_Kd Kayla LimbsD
+illum 2
+
+newmtl Feet-1
+Kd 1 1 1
+Ks 1 0.9294118 0.8901961
+map_Kd Kayla LimbsD
+illum 2
+
+newmtl Eyelashes-1
+Kd 0.1686275 0.1568627 0.1333333
+Ks 1 1 1
+illum 2
+
+newmtl Tongue-1
+Kd 0.9 0.9 0.9
+Ks 1 1 1
+map_Kd MouthD
+illum 2
+
+newmtl InnerMouth-1
+Kd 0.9 0.9 0.9
+Ks 1 1 1
+map_Kd MouthD
+illum 2
+
+newmtl Ears-1
+Kd 1 1 1
+Ks 1 0.9294118 0.8901961
+map_Kd Kayla TorsoD
+illum 2
+
