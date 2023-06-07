@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System;
 
@@ -16,11 +14,6 @@ public class BallSpawner : MonoBehaviour
         BallSpawned001?.Invoke();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void Teddy()
     {
