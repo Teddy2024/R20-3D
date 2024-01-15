@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/myLabel.uss?fileID=7433441132597879392&amp;guid=695aa852b107916478e854e3c2f235c8&amp;type=3#myLabel" />
+    <ui:Label text="HELLO" display-tooltip-when-elided="true" class="myLabel" />
+    <ui:Button text="Button" display-tooltip-when-elided="true" class="myButton" />
+    <ui:Label text="Label" display-tooltip-when-elided="true" class="myLabel" />
+    <ui:Label text="Label" display-tooltip-when-elided="true" class="myLabel" />
+    <ui:Button text="Button" display-tooltip-when-elided="true" class="myButton" />
+    <ui:Toggle label="HadSex" />
+</ui:UXML>

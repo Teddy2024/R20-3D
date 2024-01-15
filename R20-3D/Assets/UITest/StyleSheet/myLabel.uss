@@ -1,0 +1,12 @@
+.myLabel {
+    color: rgb(255, 231, 0);
+    font-size: 50px;
+    -unity-font-style: bold-and-italic;
+}
+
+.myButton {
+    border-left-color: rgba(255, 255, 255, 255);
+    border-right-color: rgba(255, 255, 255, 255);
+    border-top-color: rgba(255, 255, 255, 255);
+    border-bottom-color: rgba(255, 255, 255, 255);
+}

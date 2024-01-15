@@ -1,0 +1,69 @@
+:root
+{
+    justify-content: center;
+    align-items: center;
+
+    --border-width: 10px;
+}
+
+.container{}
+
+.border-box
+{
+    border-width: 4px;
+    border-color: white;
+    border-radius: 15px;
+}
+
+.view-box
+{
+    width: 1000px;
+    height: 700px;
+}
+
+.control-box
+{
+    flex-direction: row;
+    margin-top: 20px;
+
+    width: 1000px;
+    height: 300px;
+
+    padding: 5px;
+}
+
+.control-box Button
+{
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    border-width: var(--border-width);
+    border-color: white;
+    transition: 0.25s all;
+    
+    color: white;
+    -unity-font-style: bold;
+    font-size: 50px;
+}
+.control-box Button:hover
+{
+    background-color: #ff8c00;
+    border-radius: 10px;
+    scale:1.1;
+}
+
+.control-box Slider
+{
+    flex-grow: 1;
+}
+.unity-base-slider__dragger
+{
+    margin-top: -45px;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 50px;
+    border-width: var(--border-width);
+    border-color: white;
+}

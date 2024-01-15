@@ -1,0 +1,27 @@
+:root
+{
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+Label
+{
+    color: yellow;
+    font-size: 100px;
+}
+
+VisualElement
+{
+    width: 500px;
+    height: 50px;
+}
+
+.blueBox
+{
+    background-color: blue;
+    margin-top: 10px;
+}
+.redBox
+{
+    background-color: red;
+}
